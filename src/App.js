@@ -1,24 +1,22 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import TiaoJian from "./component/TiaoJian";
+import Lifecycle from "./component/Lifecycle";
+import AndtTest from "./component/AndtTest";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/*计数器*/}
+      {/*<TiaoJian></TiaoJian>*/}
+    {/*  生米周期*/}
+    {/*<Lifecycle></Lifecycle>*/}
+
+    {/*导入外部库*/}
+    <AndtTest></AndtTest>
+
+
     </div>
   );
 }
