@@ -4,6 +4,7 @@ import './App.css';
 import TiaoJian from "./component/TiaoJian";
 import Lifecycle from "./component/Lifecycle";
 import AndtTest from "./component/AndtTest";
+import CommentList from "./component/CommentList";
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
     {/*<Lifecycle></Lifecycle>*/}
 
     {/*导入外部库*/}
-    <AndtTest></AndtTest>
-
+    {/*<AndtTest></AndtTest>*/}
+    {/*PureComponnet*/}
+    <CommentList></CommentList>
 
     </div>
   );
