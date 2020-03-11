@@ -7,9 +7,10 @@ module.exports = function override(config, env) {
     config
   );
 
+  //配置ES7高阶组件装饰器插件
   config = injectBabelPlugin(
-    ["@babel/plugin-proposal-decorators", { legacy: true }],
-    config
+      ["@babel/plugin-proposal-decorators", { legacy: true }],
+      config
   );
 
   return config;
