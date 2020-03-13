@@ -20,9 +20,9 @@ const withLog=Comp=>{
 }
 
 //顺序是按照从上往下,并且高阶函数需要写到上面声明
-@withLog
-@withKaikeba
-@withLog
+// @withLog
+// @withKaikeba
+// @withLog
 class Kaikeba extends React.Component{
     render() {
         return <div>{this.props.stage}-{this.props.name}</div>;

@@ -1,17 +1,21 @@
-const { injectBabelPlugin } = require("react-app-rewired");
-module.exports = function override(config, env) {
-  config = injectBabelPlugin(
-    // 在默认配置基础上注入
-    // 插件名，插件配置
-    ["import", { libraryName: "antd", libraryDirectory: "es", style: "css" }],
-    config
-  );
+const {
+  override,
+  addLessLoader,
+  fixBabelImports,
+} = require("customize-cra");
 
-  //配置ES7高阶组件装饰器插件
-  config = injectBabelPlugin(
-      ["@babel/plugin-proposal-decorators", { legacy: true }],
-      config
-  );
-
-  return config;
+module.exports = {
+  webpack: override(
+      addLessLoader({
+        javascriptEnabled: true
+      }),
+      fixBabelImports("babel-plugin-import", {
+        libraryName: "antd-mobile",
+        style: true
+      }),
+  )
 };
+
+
+
+

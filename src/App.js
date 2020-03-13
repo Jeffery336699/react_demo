@@ -8,6 +8,7 @@ import CommentList from "./component/CommentList";
 import Hoc from "./component/Hoc";
 import ComponentMul from "./component/ComponentMul";
 import ComponentMul2 from "./component/ComponentMul2";
+import HookTest from "./component/HookTest";
 
 function App() {
   return (
@@ -29,7 +30,13 @@ function App() {
     {/*<ComponentMul/>*/}
 
     {/*复合组件功能*/}
-    <ComponentMul2></ComponentMul2>
+    {/*<ComponentMul2></ComponentMul2>*/}
+
+
+    {/*  Hook*/}
+    <HookTest/>
+
+
     </div>
   );
 }
