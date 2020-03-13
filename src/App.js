@@ -9,6 +9,8 @@ import Hoc from "./component/Hoc";
 import ComponentMul from "./component/ComponentMul";
 import ComponentMul2 from "./component/ComponentMul2";
 import HookTest from "./component/HookTest";
+import ContextTest from "./component/ContextTest";
+import KFormResult from "./component/KForm";
 
 function App() {
   return (
@@ -34,10 +36,15 @@ function App() {
 
 
     {/*  Hook*/}
-    <HookTest/>
+    {/*<HookTest/>*/}
 
+    {/*Context*/}
+    {/*<ContextTest/>*/}
 
+    {/*<WrappedNormalLoginForm></WrappedNormalLoginForm>*/}
+    <KFormResult></KFormResult>
     </div>
+
   );
 }
 
